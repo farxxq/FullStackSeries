@@ -107,12 +107,12 @@ for i in range (n-1,1,-1):
 # 5*1 = 5
 # 5*2 = 10 ....... upto 10 terms
 
-print("3. Take a number as input and print \nEg: 5 * 1 = 5 \n 5 * 2 = 10...... upto 10 terms")
+print("3. Take a number as input and print its table \nEg: 5 * 1 = 5 \n 5 * 2 = 10...... upto 10 terms")
 
 table = int(input("Enter a number for the table:"))
 
 for i in range(1, 11):
-    print(f"{table} * {i} = {table*i}")
+    print(f"{table} * {i} = {table * i}")
 
 # 4. Sum up to n terms
 # 1+2+3+4 = 10
@@ -123,8 +123,9 @@ sumNum = int(input("Enter the range of numbers to sum up:"))
 sum = 0
 
 for i in range(1,sumNum+1):
-    sum += i
-    print(sum)
+    sum = sum + i
+    print("sum:",sum)
+    print("i:",i)
 
 print(f"The final answer after the sum of {sumNum} is {sum}")
 
@@ -135,7 +136,7 @@ print("Factorial of a number")
 factNum = int(input("Enter a Number:"))
 fact = 1
 
-for i in range(1,sumNum+1):
+for i in range(1,factNum+1):
     fact *= i
     print(fact)
 
@@ -167,9 +168,9 @@ for i in range(1,perfectNum):
         print(perfectSum)
 
 if perfectSum == perfectNum:
-    print(f"{perfectNum} is a Strong Number")
+    print(f"{perfectNum} is a Perfect Number")
 else:
-    print(f"{perfectNum} is not a Strong Number")
+    print(f"{perfectNum} is not a Perfect Number")
 
 # 8. Check if the number is prime or not
 print("8. Check if the number is prime or not")
