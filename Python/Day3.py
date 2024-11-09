@@ -1,144 +1,217 @@
-#Day 3
-# Functions, Lists, Tuples, Dictionay, Sets
+# #Day 3
+# # Functions, Lists, Tuples, Dictionay, Sets
 
-##Functions
-print("---------Functions----------")
+# ##Functions
+# print("---------Functions----------")
 
-print("First function")
-def firstFunction():
-    print("This is a function")
+# print("First function")
+# def firstFunction():
+#     print("This is a function")
 
-firstFunction()
+# firstFunction()
 
-#Adding parameters to the functions
-print("Adding parameters to the functions")
-def paraFunction(para):
-    print(f"The output got using the parameter: ", para)
+# #Adding parameters to the functions
+# print("Adding parameters to the functions")
+# def paraFunction(para):
+#     print(f"The output got using the parameter: ", para)
 
-paraFunction("Hello, World!")
+# paraFunction("Hello, World!")
 
-#Adding more than 2 parameters
-print("Adding more than 2 parameters")
-def moreParaFunction(para1,para2):
-    print(f"This is the Para1: {para1},\nThis is the Para2: {para2}")
+# #Adding more than 2 parameters
+# print("Adding more than 2 parameters")
+# def moreParaFunction(para1,para2):
+#     print(f"This is the Para1: {para1},\nThis is the Para2: {para2}")
 
-moreParaFunction("Hello, Myself first parameter","Myself second parameter")
+# moreParaFunction("Hello, Myself first parameter","Myself second parameter")
 
-#Default Parameter
-print("Default Parameter")
-def defaultParaFunction(para1,para2,para3 = 10):
-    print("Sum of the Parameters:",para1+para2+para3)
-#default only works if the argument is not sent
-defaultParaFunction(1,2)
+# #Default Parameter
+# print("Default Parameter")
+# def defaultParaFunction(para1,para2,para3 = 10):
+#     print("Sum of the Parameters:",para1+para2+para3)
+# #default only works if the argument is not sent
+# defaultParaFunction(1,2)
 
-#Default Arguments
-print("Default Arguments")
-def defaultArguFunction(para1,para2,para3):
-    print("Displaying the paras")
-    print(f"This is the 2nd para: {para2}")
-    print(f"This is the 3rd para: {para3}")
-    print(f"This is the 1st para: {para1}")
+# #Default Arguments
+# print("Default Arguments")
+# def defaultArguFunction(para1,para2,para3):
+#     print("Displaying the paras")
+#     print(f"This is the 2nd para: {para2}")
+#     print(f"This is the 3rd para: {para3}")
+#     print(f"This is the 1st para: {para1}")
 
-defaultArguFunction(para2 = "This is for para2", para1 = "This is for para1", para3 = "This is for para3")
+# defaultArguFunction(para2 = "This is for para2", para1 = "This is for para1", para3 = "This is for para3")
 
-#Return statement in functions
-print("Return statement in functions")
-def returnFuntion(a):
-    if a % 2 == 0:
-        return ("Even")
-    else:
-        return ("odd")
+# #Return statement in functions
+# print("Return statement in functions")
+# def returnFuntion(a):
+#     if a % 2 == 0:
+#         return ("Even")
+#     else:
+#         return ("odd")
     
-#'return' is used to returns the value at the place called whereas the print statement only prints and cannot be used or stored in a variable.
-result = returnFuntion(12)
-print(f"The result from the function {result}")
+# #'return' is used to returns the value at the place called whereas the print statement only prints and cannot be used or stored in a variable.
+# result = returnFuntion(12)
+# print(f"The result from the function {result}")
     
 
-## Strings
-print("--------Strings----------")
+# ## Strings
+# print("--------Strings----------")
 
-#String indexing 
-print("String Indexing")
+# #String indexing 
+# print("String Indexing")
 
-a = "Safar, a KeywOrd"
-print(f"Indexing of the {a}: {a[0]}")
-print(f"Indexing of the {a}: {a[-14]}")
+# a = "Safar, a KeywOrd"
+# print(f"Indexing of the {a}: {a[0]}")
+# print(f"Indexing of the {a}: {a[-14]}")
 
-# String inexing in a range / Slicing
-print("String indexing in a range / Slicing")
+# # String inexing in a range / Slicing
+# print("String indexing in a range / Slicing")
 
-print("Indexing in a range: ",a[0::2])
+# print("Indexing in a range: ",a[0::2])
 
-# length function
-print("Length function")
-# len() also considers the spaces
-print(f"The lenght of the string : {len(a)}")
+# # length function
+# print("Length function")
+# # len() also considers the spaces
+# print(f"The lenght of the string : {len(a)}")
 
-# To search each character or the string in a var
-print("To search each char in a string")
-if "Safar" in a:
-    print(True)
-else:
-    print(False)
+# # To search each character or the string in a var
+# print("To search each char in a string")
+# if "Safar" in a:
+#     print(True)
+# else:
+#     print(False)
 
-# To print character of the string
-print("To print each character of the string")
-print("using the 'in' keyword")
-for i in a:
-    print(i)
+# # To print character of the string
+# print("To print each character of the string")
+# print("using the 'in' keyword")
+# for i in a:
+#     print(i)
 
-print("using the 'range' keyword")
-for i in range(0, len(a)):
-    print(a[i])
+# print("using the 'range' keyword")
+# for i in range(0, len(a)):
+#     print(a[i])
 
-# String Methods
-print("--------Strings Methods-----------")
+# # String Methods
+# print("--------Strings Methods-----------")
 
-print("Upper() method")
-cap = a.upper()
-print(f"This is Capitalized: {cap}")
+# print("Upper() method")
+# cap = a.upper()
+# print(f"This is Capitalized: {cap}")
 
-low = a.lower()
-print(f"This is lower: {low}")
+# low = a.lower()
+# print(f"This is lower: {low}")
 
-# to be continued with the string methods
+# # to be continued with the string methods
 
-##List
-print("------List------")
+# ##List
+# print("------List------")
 
-name = ["Sa", "Fa", "Mu", "Aa", "Fo"]
-print(name)
+# name = ["Sa", "Fa", "Mu", "Aa", "Fo"]
+# print(name)
 
-#Mutable (List can be changed)
-name[2] = "Muq" 
-print("The list after updating: ",name)
+# #Mutable (List can be changed)
+# name[2] = "Muq" 
+# print("The list after updating: ",name)
 
-#List Index
-print(f"Printing the index of the list :{name[0]}")
+# #List Index
+# print(f"Printing the index of the list :{name[0]}")
 
-#List slicing
-print(f"Slicing of the List elements: {name[0:2:1]}")
+# #List slicing
+# print(f"Slicing of the List elements: {name[0:2:1]}")
 
-#List methods
-print("---------List methods--------")
-print("insert() method") # to add the element at a particular index
-name.insert(5,"Vi")
-print("Using the insert() method: ",name)
+# #List methods
+# print("---------List methods--------")
+# print("insert() method") # to add the element at a particular index
+# name.insert(5,"Vi")
+# print("Using the insert() method: ",name)
 
-print("append() method") # to add the element at the end
-name.append("Fa") 
-print("Using the append() method",name)
+# print("append() method") # to add the element at the end
+# name.append("Fa") 
+# print("Using the append() method",name)
 
-print("pop() method")
-name.pop() #default the last element is popped
-print("The last element is poped",name)
-name.pop(5)
-print("Popped a particular element",name)
+# print("pop() method")
+# name.pop() #default the last element is popped
+# print("The last element is poped",name)
+# name.pop(5)
+# print("Popped a particular element",name)
 
-#remove() method
-print("remove() method")
-name.remove("Aa") #removes the particular element from the list
-print("remove() method used:", name) 
+# #remove() method
+# print("remove() method")
+# name.remove("Aa") #removes the particular element from the list
+# print("remove() method used:", name) 
 
-##Tuple
-print("-------Tuple----------")
+# ##Tuple
+# print("-------Tuple----------")
+
+# bhai = ("Sa", "Mu", "Fou", "Aa", "Vi","Fa")
+# print(f"The tuple of bhai var is: {bhai} and type is {type(bhai)}")
+# #Tuple are immutable i.e. we cannot change the values in this tuple
+
+# print("Making changes in the tuple despite of them being immutable")
+
+# #bhai[2] = "Fa" # Cannot change the value as it is tuple
+# #instead we can change it to list and then do the operations and then revert it back to tuple
+
+# bhai = list(bhai)
+# print(f"The type of the Bhai is: {type(bhai)} and the list contains: {bhai}")
+# bhai.insert(5,"Dtr")
+# print(f"The Bhai list after change: {bhai}")
+# bhai = tuple(bhai)
+# print(f"The Bhai tuple after changes: {bhai} and type of bhai is {type(bhai)}")
+
+# #To print all the elements
+# print("Printing each elem using 'range' keyword")
+
+# for i in range(len(bhai)):
+#     print(bhai[i])
+
+# print("Printing each elem using 'in' keyword")
+
+# for i in bhai:
+#     print(i)
+
+# #Tuple unpacking
+# print("Tuple unpacking")
+# tupleEg = ("12","2807","2003")
+# print(f"The values in the tupleEg: {tupleEg}")
+# a,b,c = tupleEg # we need to assign all the elems to a variable in the tuple to unpack them
+# print(f"Prints the value of a as: {a}")
+# print(f"Prints the value of b as: {b}")
+# print(f"Prints the value of c as: {c}")
+
+# ##Sets
+# print("--------Sets--------")
+
+# #Sets need to have unique values and only those will be printed
+
+# setEg = {1,2,3,4,"Sa","Fa","Sa","Fa"}
+
+# print(f"This is the setEg: {setEg} and the type of it is: {type(setEg)}")
+
+# # The indexing can't be used in the sets and also we can't change the values (as we don't know the address of the value stored in the ram)
+
+# #print(setEg(0)) #Throws error that it is not callable
+
+# eg = [1,2,2,2,3,4,5,5,6,6,6]
+# print(f"The type of eg: {type(eg)} and the value it has is: {eg}")
+
+# eg = set(eg)
+# print(f"Now the list is changed to set: {type(eg)}, and values: {eg} ")
+
+# #Only Using 'in' keyword we can print the elements
+# print("Only Using 'in' keyword we can print the elements")
+# for i in setEg:
+#     print(i)
+
+##Dictionary
+
+print("-------------Dictionary-------------")
+#Dictionary has keys and values...... in other language they are said to be 'hashmap' aswell.
+dictionary = {
+    "Name": "Farooq",
+    "Keyword": "Safar"
+} 
+
+print(dictionary["Name"])
+
+
