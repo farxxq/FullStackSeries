@@ -140,68 +140,68 @@
 # name.remove("Aa") #removes the particular element from the list
 # print("remove() method used:", name) 
 
-# ##Tuple
-# print("-------Tuple----------")
+##Tuple
+print("-------Tuple----------")
 
-# bhai = ("Sa", "Mu", "Fou", "Aa", "Vi","Fa")
-# print(f"The tuple of bhai var is: {bhai} and type is {type(bhai)}")
-# #Tuple are immutable i.e. we cannot change the values in this tuple
+bhai = ("Sa", "Mu", "Fou", "Aa", "Vi","Fa",1,2,3)
+print(f"The tuple of bhai var is: {bhai} and type is {type(bhai)}")
+#Tuple are immutable i.e. we cannot change the values in this tuple
 
-# print("Making changes in the tuple despite of them being immutable")
+print("Making changes in the tuple despite of them being immutable")
 
-# #bhai[2] = "Fa" # Cannot change the value as it is tuple
-# #instead we can change it to list and then do the operations and then revert it back to tuple
+# bhai[2] = "Fa" # Cannot change the value as it is tuple
+#instead we can change it to list and then do the operations and then revert it back to tuple
 
-# bhai = list(bhai)
-# print(f"The type of the Bhai is: {type(bhai)} and the list contains: {bhai}")
-# bhai.insert(5,"Dtr")
-# print(f"The Bhai list after change: {bhai}")
-# bhai = tuple(bhai)
-# print(f"The Bhai tuple after changes: {bhai} and type of bhai is {type(bhai)}")
+bhai = list(bhai)
+print(f"The type of the Bhai is: {type(bhai)} and the list contains: {bhai}")
+bhai.insert(5,"Dtr")
+print(f"The Bhai list after change: {bhai}")
+bhai = tuple(bhai)
+print(f"The Bhai tuple after changes: {bhai} and type of bhai is {type(bhai)}")
 
-# #To print all the elements
-# print("Printing each elem using 'range' keyword")
+#To print all the elements
+print("Printing each elem using 'range' keyword")
 
-# for i in range(len(bhai)):
-#     print(bhai[i])
+for i in range(len(bhai)):
+    print(bhai[i])
 
-# print("Printing each elem using 'in' keyword")
+print("Printing each elem using 'in' keyword")
 
-# for i in bhai:
-#     print(i)
+for i in bhai:
+    print(i)
 
-# #Tuple unpacking
-# print("Tuple unpacking")
-# tupleEg = ("12","2807","2003")
-# print(f"The values in the tupleEg: {tupleEg}")
-# a,b,c = tupleEg # we need to assign all the elems to a variable in the tuple to unpack them
-# print(f"Prints the value of a as: {a}")
-# print(f"Prints the value of b as: {b}")
-# print(f"Prints the value of c as: {c}")
+#Tuple unpacking
+print("Tuple unpacking")
+tupleEg = ("12","2807","2003")
+print(f"The values in the tupleEg: {tupleEg}")
+a,b,c = tupleEg # we need to assign all the elems to a variable in the tuple to unpack them
+print(f"Prints the value of a as: {a}")
+print(f"Prints the value of b as: {b}")
+print(f"Prints the value of c as: {c}")
 
-# ##Sets
-# print("--------Sets--------")
+##Sets
+print("--------Sets--------")
 
-# #Sets need to have unique values and only those will be printed
+#Sets need to have unique values and only those will be printed
 
-# setEg = {1,2,3,4,"Sa","Fa","Sa","Fa"}
+setEg = {1,2,3,4,"Sa","Fa","Sa","Fa"}
 
-# print(f"This is the setEg: {setEg} and the type of it is: {type(setEg)}")
+print(f"This is the setEg: {setEg} and the type of it is: {type(setEg)}")
 
-# # The indexing can't be used in the sets and also we can't change the values (as we don't know the address of the value stored in the ram)
+# The indexing can't be used in the sets and also we can't change the values (as we don't know the address of the value stored in the ram)
 
-# #print(setEg(0)) #Throws error that it is not callable
+#print(setEg(0)) #Throws error that it is not callable
 
-# eg = [1,2,2,2,3,4,5,5,6,6,6]
-# print(f"The type of eg: {type(eg)} and the value it has is: {eg}")
+eg = [1,2,2,2,3,4,5,5,6,6,6]
+print(f"The type of eg: {type(eg)} and the value it has is: {eg}")
 
-# eg = set(eg)
-# print(f"Now the list is changed to set: {type(eg)}, and values: {eg} ")
+eg = set(eg)
+print(f"Now the list is changed to set: {type(eg)}, and values: {eg} ")
 
-# #Only Using 'in' keyword we can print the elements
-# print("Only Using 'in' keyword we can print the elements")
-# for i in setEg:
-#     print(i)
+#Only Using 'in' keyword we can print the elements
+print("Only Using 'in' keyword we can print the elements")
+for i in setEg:
+    print(i)
 
 ##Dictionary
 
