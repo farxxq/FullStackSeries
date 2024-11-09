@@ -1,144 +1,144 @@
-# #Day 3
-# # Functions, Lists, Tuples, Dictionay, Sets
+#Day 3
+# Functions, Lists, Tuples, Dictionay, Sets
 
-# ##Functions
-# print("---------Functions----------")
+##Functions
+print("---------Functions----------")
 
-# print("First function")
-# def firstFunction():
-#     print("This is a function")
+print("First function")
+def firstFunction():
+    print("This is a function")
 
-# firstFunction()
+firstFunction()
 
-# #Adding parameters to the functions
-# print("Adding parameters to the functions")
-# def paraFunction(para):
-#     print(f"The output got using the parameter: ", para)
+#Adding parameters to the functions
+print("Adding parameters to the functions")
+def paraFunction(para):
+    print(f"The output got using the parameter: ", para)
 
-# paraFunction("Hello, World!")
+paraFunction("Hello, World!")
 
-# #Adding more than 2 parameters
-# print("Adding more than 2 parameters")
-# def moreParaFunction(para1,para2):
-#     print(f"This is the Para1: {para1},\nThis is the Para2: {para2}")
+#Adding more than 2 parameters
+print("Adding more than 2 parameters")
+def moreParaFunction(para1,para2):
+    print(f"This is the Para1: {para1},\nThis is the Para2: {para2}")
 
-# moreParaFunction("Hello, Myself first parameter","Myself second parameter")
+moreParaFunction("Hello, Myself first parameter","Myself second parameter")
 
-# #Default Parameter
-# print("Default Parameter")
-# def defaultParaFunction(para1,para2,para3 = 10):
-#     print("Sum of the Parameters:",para1+para2+para3)
-# #default only works if the argument is not sent
-# defaultParaFunction(1,2)
+#Default Parameter
+print("Default Parameter")
+def defaultParaFunction(para1,para2,para3 = 10):
+    print("Sum of the Parameters:",para1+para2+para3)
+#default only works if the argument is not sent
+defaultParaFunction(1,2)
 
-# #Default Arguments
-# print("Default Arguments")
-# def defaultArguFunction(para1,para2,para3):
-#     print("Displaying the paras")
-#     print(f"This is the 2nd para: {para2}")
-#     print(f"This is the 3rd para: {para3}")
-#     print(f"This is the 1st para: {para1}")
+#Default Arguments
+print("Default Arguments")
+def defaultArguFunction(para1,para2,para3):
+    print("Displaying the paras")
+    print(f"This is the 2nd para: {para2}")
+    print(f"This is the 3rd para: {para3}")
+    print(f"This is the 1st para: {para1}")
 
-# defaultArguFunction(para2 = "This is for para2", para1 = "This is for para1", para3 = "This is for para3")
+defaultArguFunction(para2 = "This is for para2", para1 = "This is for para1", para3 = "This is for para3")
 
-# #Return statement in functions
-# print("Return statement in functions")
-# def returnFuntion(a):
-#     if a % 2 == 0:
-#         return ("Even")
-#     else:
-#         return ("odd")
+#Return statement in functions
+print("Return statement in functions")
+def returnFuntion(a):
+    if a % 2 == 0:
+        return ("Even")
+    else:
+        return ("odd")
     
-# #'return' is used to returns the value at the place called whereas the print statement only prints and cannot be used or stored in a variable.
-# result = returnFuntion(12)
-# print(f"The result from the function {result}")
+#'return' is used to returns the value at the place called whereas the print statement only prints and cannot be used or stored in a variable.
+result = returnFuntion(12)
+print(f"The result from the function {result}")
     
 
-# ## Strings
-# print("--------Strings----------")
+## Strings
+print("--------Strings----------")
 
-# #String indexing 
-# print("String Indexing")
+#String indexing 
+print("String Indexing")
 
-# a = "Safar, a KeywOrd"
-# print(f"Indexing of the {a}: {a[0]}")
-# print(f"Indexing of the {a}: {a[-14]}")
+a = "Safar, a KeywOrd"
+print(f"Indexing of the {a}: {a[0]}")
+print(f"Indexing of the {a}: {a[-14]}")
 
-# # String inexing in a range / Slicing
-# print("String indexing in a range / Slicing")
+# String inexing in a range / Slicing
+print("String indexing in a range / Slicing")
 
-# print("Indexing in a range: ",a[0::2])
+print("Indexing in a range: ",a[0::2])
 
-# # length function
-# print("Length function")
-# # len() also considers the spaces
-# print(f"The lenght of the string : {len(a)}")
+# length function
+print("Length function")
+# len() also considers the spaces
+print(f"The lenght of the string : {len(a)}")
 
-# # To search each character or the string in a var
-# print("To search each char in a string")
-# if "Safar" in a:
-#     print(True)
-# else:
-#     print(False)
+# To search each character or the string in a var
+print("To search each char in a string")
+if "Safar" in a:
+    print(True)
+else:
+    print(False)
 
-# # To print character of the string
-# print("To print each character of the string")
-# print("using the 'in' keyword")
-# for i in a:
-#     print(i)
+# To print character of the string
+print("To print each character of the string")
+print("using the 'in' keyword")
+for i in a:
+    print(i)
 
-# print("using the 'range' keyword")
-# for i in range(0, len(a)):
-#     print(a[i])
+print("using the 'range' keyword")
+for i in range(0, len(a)):
+    print(a[i])
 
-# # String Methods
-# print("--------Strings Methods-----------")
+# String Methods
+print("--------Strings Methods-----------")
 
-# print("Upper() method")
-# cap = a.upper()
-# print(f"This is Capitalized: {cap}")
+print("Upper() method")
+cap = a.upper()
+print(f"This is Capitalized: {cap}")
 
-# low = a.lower()
-# print(f"This is lower: {low}")
+low = a.lower()
+print(f"This is lower: {low}")
 
-# # to be continued with the string methods
+# to be continued with the string methods
 
-# ##List
-# print("------List------")
+##List
+print("------List------")
 
-# name = ["Sa", "Fa", "Mu", "Aa", "Fo"]
-# print(name)
+name = ["Sa", "Fa", "Mu", "Aa", "Fo"]
+print(name)
 
-# #Mutable (List can be changed)
-# name[2] = "Muq" 
-# print("The list after updating: ",name)
+#Mutable (List can be changed)
+name[2] = "Muq" 
+print("The list after updating: ",name)
 
-# #List Index
-# print(f"Printing the index of the list :{name[0]}")
+#List Index
+print(f"Printing the index of the list :{name[0]}")
 
-# #List slicing
-# print(f"Slicing of the List elements: {name[0:2:1]}")
+#List slicing
+print(f"Slicing of the List elements: {name[0:2:1]}")
 
-# #List methods
-# print("---------List methods--------")
-# print("insert() method") # to add the element at a particular index
-# name.insert(5,"Vi")
-# print("Using the insert() method: ",name)
+#List methods
+print("---------List methods--------")
+print("insert() method") # to add the element at a particular index
+name.insert(5,"Vi")
+print("Using the insert() method: ",name)
 
-# print("append() method") # to add the element at the end
-# name.append("Fa") 
-# print("Using the append() method",name)
+print("append() method") # to add the element at the end
+name.append("Fa") 
+print("Using the append() method",name)
 
-# print("pop() method")
-# name.pop() #default the last element is popped
-# print("The last element is poped",name)
-# name.pop(5)
-# print("Popped a particular element",name)
+print("pop() method")
+name.pop() #default the last element is popped
+print("The last element is poped",name)
+name.pop(5)
+print("Popped a particular element",name)
 
-# #remove() method
-# print("remove() method")
-# name.remove("Aa") #removes the particular element from the list
-# print("remove() method used:", name) 
+#remove() method
+print("remove() method")
+name.remove("Aa") #removes the particular element from the list
+print("remove() method used:", name) 
 
 ##Tuple
 print("-------Tuple----------")
@@ -211,7 +211,38 @@ dictionary = {
     "Name": "Farooq",
     "Keyword": "Safar"
 } 
-
+print(f"This is the dictionary: {dictionary}, type: {type(dictionary)}")
 print(dictionary["Name"])
 
+#To make changes we use the keys and not the index
+print("To make changes we use the keys and not the index")
 
+dictionary["Name"] = "Faroo"
+print(dictionary)
+
+#To make add the elements we need to do as the following
+print("To make add the elements")
+
+print(f"The Dictionary: {dictionary}")
+dictionary["LoveLang"] = "Urdu"
+print(f"The updated dictionary: {dictionary}")
+
+#To add 2 dictionaries
+newDict = {1:"Hello",2:"This is",3:"My world!"}
+
+dictionary.update(newDict)
+
+print(f"The updated the value: {dictionary}")
+
+#Printing the dictionary values
+print("Printing the dictionary values")
+for i in dictionary:
+    print(dictionary[i]) #i is the index, that works as keys in dictionary
+
+print("Printing the values of the dictionary using the '.values' keyword")
+for i in dictionary.values():
+    print(i)
+
+print("Printing the keys of the dictionary using the '.keys' keyword")
+for i in dictionary.keys():
+    print(i)
