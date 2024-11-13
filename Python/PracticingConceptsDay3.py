@@ -40,4 +40,44 @@ print(f"Copied the string in new var: {copyString}")
 # 2. Arrange string characters such that lowercase letters should come first in another string.
 print("2. Arrange string characters such that lowercase letters should come first in another string.")
 
-arrangeString = ""
+arrangeString = "HELlO hoW aRe YOU"
+lowerArrange = ""
+
+# using for loop
+for i in arrangeString:
+    if i.islower():
+        lowerArrange += i
+
+for i in arrangeString:
+    if i.isupper():
+        lowerArrange += i
+
+print(lowerArrange)
+
+# Using split()
+print("Using split()")
+
+arrangeSplit = arrangeString.split()
+print(f"arrangeSplit: {arrangeSplit}")
+
+result = []
+for word in arrangeSplit:
+    print("The element in the list is:",word)
+    lowerArrangeSplit = ""
+    upperSplit = ""
+    for char in word:
+        if char.islower():
+            lowerArrangeSplit += char
+            print("LowerSplit:", lowerArrangeSplit)
+        elif char.isupper():
+            upperSplit += char
+            print("UpperSplit:", upperSplit)
+        
+    sort = lowerArrangeSplit + upperSplit
+    print(result)
+    result.append(sort)
+print(f"Result: {result}")
+            
+
+
+
