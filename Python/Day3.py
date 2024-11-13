@@ -111,7 +111,7 @@ name = ["Sa", "Fa", "Mu", "Aa", "Fo"]
 print(name)
 
 #Mutable (List can be changed)
-name[2] = "Muq" 
+name[2] = "Muq" # Changes the element in the second index (Mu) to (Muq)
 print("The list after updating: ",name)
 
 #List Index
