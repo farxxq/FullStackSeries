@@ -94,14 +94,15 @@ for i in range(0, len(a)):
 # String Methods
 print("--------Strings Methods-----------")
 
-print("Upper() method")
+print("upper() method")
 cap = a.upper()
 print(f"This is Capitalized: {cap}")
 
+print("lower() method")
 low = a.lower()
 print(f"This is lower: {low}")
 
-# to be continued with the string methods
+# To be continued with the string methods refer online documentation
 
 ##List
 print("------List------")
