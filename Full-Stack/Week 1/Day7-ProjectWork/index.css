@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: black;
+    color: lavenderblush;
+    margin: 0;
+    font-family: cursive, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container{
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #003;
+}
+
+/* Nav container */
+.navContainer{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar */
+nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    border: 1px solid #7CF5FF;
+    border-radius: 30px;
+}
+
+nav a{
+    color: #7CF5FF;
+    text-decoration: none;
+}
+
+/* Hero container */
+.heroContainer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #005;
+}
+
+/* Header */
+.header{
+    
+}
+
+img{
+    border: 1px solid red;
+}
