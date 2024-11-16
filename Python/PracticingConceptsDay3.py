@@ -279,4 +279,96 @@
 
 # print(f"The list6 is sorted now: {list6}")
 
-        
+# # 7. Palindromic list or not, Palindrome means:- Same list even when reversed.
+
+# print("Palindromic list or not, Palindrome means:- Same list even when reversed.")
+
+# list7 = [1,2,3,4,3,2,1,]
+# reverseList7 = []
+
+# # using the parsing method
+# if list7[::1] == list7[::-1]:
+#     print(f"The list: {list7} is Palindromic list according to the parsing method")
+# else:
+#     print(f"The list: {list7} is not Palindromic list according to the parsing method")
+
+# #using the for loop 
+# for i in range(len(list7) - 1, -1, -1):
+#     reverseList7.append(-i)
+
+# if list7 == reverseList7:
+#     print(f"The list: {list7} is a Palindromic list according to the loops")
+# else:
+#     print(f"The list: {list7} is not a Palindromic list according to the loops")
+
+# # 8. How many seperate elements are there in a list excluding the repetations
+
+# list8 = [1,1,1,28,28,28,2,2,7,7,2004,2003,17,3,2023,19,4,2023]
+# print(f"The number of elements in this list with repeatation :{len(list8)}")
+# list8 = set(list8)
+# list8 = list(list8)
+# print(f"The number of elements in this list without repeatation: {len(list8)}")
+
+# ## Dictionary Questions
+# print("-------Dictionary Questions----------")
+
+# # 1. Write a dictionary to merge 2 python dictionaries
+
+# print("1. Write a dictionary to merge 2 python dictionaries")
+
+# dict1a = {
+#     1: "Sa",
+#     2: "Far"
+# }
+# dict1b = {
+#     3: "Safar", # need to give different keys if not will override the similar one new value
+#     4: "<3"
+# }
+
+# dict1c = dict1a
+# dict1c.update(dict1b)
+
+# print(dict1c) #updates the values of dict1a as well
+# print(dict1a)
+# #can directly update the stuff aswell using "dict1a.update(dict1b)" without taking the temp var
+
+# # 2. Write a code to sum all the values of a dictionary
+
+# dict2 = {
+#     1: 10,
+#     2: 20,
+#     3: 30
+# }
+# sumDict = 0
+
+# for i in dict2:
+#     sumDict += dict2[i]
+
+# print(f"The sum of the elements in the dictionary is: {sumDict}")
+
+# 3. Count the frequency of each element in a dictionary
+
+print("3. Count the frequency of each element in a dictionary")
+
+dict3 = {
+    1: 1,
+    2: 1,
+    3: 28,
+    4: 1,
+    5: 28,
+    6: 2004,
+    7: 2003,
+    8: 2004,
+}
+
+print(f"The dictionary has these values: {dict3}")
+countDict = 0
+
+if not dict3:
+    print("The Dictionary is empty")
+else:
+    for i in dict3.values():
+            values = i
+            print(values)
+    
+print(f"The number of values repeated in the dictionary are: {countDict}")
