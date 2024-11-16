@@ -46,7 +46,7 @@ nav a{
 /* Hero container */
 .heroContainer{
     width: 100%;
-    height: 90%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
     background-color: #005;
@@ -57,6 +57,17 @@ nav a{
     
 }
 
-img{
+.heroImage{
+    padding: 20px;
+    width: 50%;
+    min-height: 40%;
+    display: contents;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.heroImage img{
+    /* height: 5rem; */
+    size: 10px;
     border: 1px solid red;
 }
