@@ -340,35 +340,44 @@ dict2 = {
     3: 30
 }
 sumDict = 0
+#using the '.values'
+for i in dict2.values():
+    sumDict += i
 
-for i in dict2:
-    sumDict += dict2[i]
+#without using '.values'
+# for i in dict2:
+#     sumDict += dict2[i]
 
 print(f"The sum of the elements in the dictionary is: {sumDict}")
 
-# 3. Count the frequency of each element in a dictionary
+# 3. Count the frequency of each element in a List
 
-print("3. Count the frequency of each element in a dictionary")
+print("3. Count the frequency of each element in a List")
 
-dict3 = {
-    1: 1,
-    2: 1,
-    3: 28,
-    4: 1,
-    5: 28,
-    6: 2004,
-    7: 2003,
-    8: 2004,
-}
+listDict3 = [1,1,1,28,28,28,2,2,7,7,2004,2003,17,3,2023,19,4,2023]
+dict3 = {}
 
-print(f"The dictionary has these values: {dict3}")
-countDict = 0
+print(f"The List has these values: {listDict3}")
 
-if not dict3:
-    print("The Dictionary is empty")
-else:
-    for i in dict3.values():
-            values = i
-            print(values)
+for i in listDict3:    
+    if i in dict3.keys():
+        dict3[i] += 1
+    else:
+        dict3[i] = 1
     
-print(f"The number of values repeated in the dictionary are: {countDict}")
+print(f"The number of values repeated in the dictionary are: {dict3}")
+
+# 4. Write a python program to combine 2 dictionary by adding values for common keys
+
+print("4. Write a python program to combine 2 dictionary by adding values for common keys")
+
+dict4a = {1:2,3:17,7:28}
+dict4b = {1:2003,3:2023,4:19,7:2004,9:26}
+
+for i in dict4b.keys():
+    if i in dict4a.keys():
+        dict4a[i] += dict4b[i]
+    else:
+        dict4a[i] = dict4b[i]
+
+print(f"The dictionary4a (updated): {dict4a}")
