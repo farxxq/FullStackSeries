@@ -81,7 +81,7 @@ theLove = Constructors3(19,4,2023) # this is the object (the class in a var is c
 print(f"This fetches the location of theLove:{theLove}") #prints the location of the object
 print(f"This prints the date from the constructor for theLove: {theLove.date}") #prints the value
 
-Object Method:
+# Object Method:
 theLove.likeMe() 
 
 # Encapsulation (Keeping the data safe and only authorized people can)
