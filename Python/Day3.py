@@ -247,3 +247,8 @@ for i in dictionary.values():
 print("Printing the keys of the dictionary using the '.keys' keyword")
 for i in dictionary.keys():
     print(i)
+
+import random
+
+random_gen = random.randint(1,100) # this gives a random number between 1 to 100
+print(f"This is the random Number generated:{random_gen}")
