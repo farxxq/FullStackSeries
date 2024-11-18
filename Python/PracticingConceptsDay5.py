@@ -22,11 +22,11 @@ class Student:
         return avg
     
     def display(self):
-        print(f"Rrn of: {self.rrn}")
+        print(f"Rrn: {self.rrn}")
         print(f"Name: {self.name}")
         print(f"dept: {self.dept}")
         print(f"Marks: {self.marks}")
-        print(f"Average Marks obtained: {self.avg()}")
+        print(f"Average Marks obtained by {self.name} is: {self.avg()}")
         
 
 student1 = Student(96,"Faroo","CSE")
