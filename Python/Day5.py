@@ -171,7 +171,7 @@ print("----Abstraction----")
 from abc import ABC , abstractmethod
 
 class Shape(ABC):
-    @abstractmethod
+    @abstractmethod #decorators - functions that get a function and return another function
     def area():
         pass
 
@@ -183,6 +183,9 @@ class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
     
+    @staticmethod #decorators - makes the below funciton static and make it class.attribute (doesn't need to have the self keyword or any passed parameter)
+    def hello():
+        print("Hello")
     # Need to make this so that we can access it here
     def area():
         pass
@@ -192,4 +195,16 @@ class Circle(Shape):
 
 cir1 = Circle(12)
 
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+    
+    def start(self):
+        self.clutch = True
+        self.acc = True
+        print("Car is started and you are ready to go....")
 
+car1 = Car()
+car1.start
