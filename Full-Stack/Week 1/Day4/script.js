@@ -227,13 +227,36 @@ The program should have the following:
     d. Equilateral: All three sides are equal.
     e. Isosceles: 2 sides are equal.
 */
+len1 = 10
+len2 = 20
+len3 = 30
 
-
-
-
+if (len1 + len2 >= len3 || len1 + len3 >= len2){
+    console.log("Triangle is valid");  
+    
+    if (len1 == len2 || len2 == len3 || len1 == len3){
+        console.log("This is a Isosceles Triangle");
+    }else if(len1 == len2 ==len3){
+        console.log("This is a Equilateral Triangle")
+    }else{
+        console.log("This is a Scalene Triangle")
+    }
+}
+else{
+    console.log("The given data doesn't make a triangle")
+}
 
 /*
 2. Pattern of stars in the shape of pyramid.Display the pyramid on the web page.
     a. nested loops to generate pyramid.
     b. while loop to calc and log the total number of stars used in the pyramid.
 */
+const num = 5
+
+for (let i = 0; i < num; i++) {
+    for (let j = 0; j < i; j++) {
+        
+        
+    }
+    
+}
