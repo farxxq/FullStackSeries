@@ -270,6 +270,7 @@ else:
 if not list6 or len(list6) == 1:
     print("The list is either empty or has only 1 value")
 
+#Bubble Sort
 for i in range(len(list6)):
     for j in range(len(list6)-1):
         if list6[j] > list6[j+1]:
