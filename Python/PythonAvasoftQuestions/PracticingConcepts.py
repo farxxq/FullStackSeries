@@ -46,15 +46,41 @@ def SumOfElem(a):
 #Max and minimum Elements in a list
 
 def MaxNMin(a):
-    min = []
-    max = a[0]
-    for i in range(0, len(a)+1, 1):
-        if a[i] > a[i+1]:
-            max = a[i]
-            print("The max:",max)
-        elif a[i] == a[i+1]:
-            continue
-        if a[i] < a[i+1]:
-            min = a[i]
-            print("The min:",min)
-MaxNMin(list1)
+    min_val = a[0]
+    max_val = a[0]
+    for i in range(0, len(a), 1):
+        if a[i] > max_val:
+            max_val = a[i]
+            
+        if a[i] < min_val:
+            min_val = a[i]
+           
+    print(f"The final max value is: {max_val}")
+    print(f"The final min value is: {min_val}")
+# MaxNMin(list1)
+
+
+# Find the length of the list
+def LengthList(a):
+    print("First Approach:\nThe lenght of the list is:", len(a))
+    count = 0
+    for i in a:
+        count += 1
+    print("Second Approach:\nThe lenght of the list is:", count)
+LengthList(list1)
+
+# Swap first and the last element of the list
+def SwapElems(a):
+    #first approach
+    a[0],a[-1] = a[-1],a[0]
+    print("First Approach:\nThe List after swap:",a)
+
+    print("\nList Before Second Approach:", a)
+    temp = a[0]
+    a[0] = a[-1]
+    a[-1] = temp
+    print("Second Approach:\nThe list after swap:",a)
+
+
+SwapElems(list1)
+
