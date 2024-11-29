@@ -1,8 +1,8 @@
 // Fundamentals of JS
+// forEach map filter find indexOf
 // arrays and objects
 // functions return
 // async js
-// forEach map filter find indexOf
 
 var arr = [1, 2, 28, 7, 2004, 2003];
 // # forEach:
