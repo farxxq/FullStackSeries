@@ -1,0 +1,20 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Sa": "echo \" Assalamwalaikum, Kaise ho?\""
+  },
+  "keywords": [],
+  "author": "Farooq",
+  "license": "ISC",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
