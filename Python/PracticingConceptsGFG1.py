@@ -43,12 +43,13 @@ def GFG2(arr):
         return "No Change in array as there are no 0s."
     
     for i in range(n):
-
+        count = 0
         if arr[i] == 0:
-            zero = arr.pop(i)
-            arr.append(zero)
+            arr[count],arr[i] = arr[i],arr[count]
+            count +=1
+            print("The count:",count)
         
     return arr
 
-print(GFG2(list_full_zeros))
+print(GFG2(list_with_zeros))
 
