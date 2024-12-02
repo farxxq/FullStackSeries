@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes app</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen p-10 bg-zinc-800">
+      <a class="text-blue-500 inline-block mb-10" href="/">Fall Back to home</a>
+      <h1 class="text-white text-4xl tracking-tighter"><%= filename %></h1>
+      <form action="/delete" method="post">
+        <input type="hidden" name="filename" value="<%= filename %>" /> <!-- This is used to get the file name and send it to the post method -->
+        <input
+            class="mt-2 bg-red-800 px-5 py-2 rounded-md"
+            type="submit"
+            value="Delete task"
+          />
+      </form>
+  </body>
+</html>
