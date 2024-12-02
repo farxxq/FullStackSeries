@@ -1,0 +1,1 @@
+console.log("The scripts are working from ejs")
