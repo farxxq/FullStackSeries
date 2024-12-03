@@ -1,0 +1,24 @@
+Database 
+it is the storage of all the data belonging to a particular product
+for eg: The Data of the Project A
+
+
+Database -> Collections
+it is the partitions in the database that denotes specific parts or sections
+for eg: The A project might have a collections of User ids or info of the user
+
+Database -> Collections -> Document
+viewing of a particular data in the collections
+for eg: In the A project, in the user collections fetching of the data of a particular user.
+
+CODE    Database
+--------------------------------
+mongoose.connect    ->  database create
+model create        ->  collections
+CREATE code         ->  Document
+
+ORM - Object Relation Mapping
+ODM - Object Document Mapping 
+
+Schema 
+the identies that all of them have
