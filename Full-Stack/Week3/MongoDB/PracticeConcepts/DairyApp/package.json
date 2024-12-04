@@ -1,0 +1,19 @@
+{
+  "name": "dairyapp",
+  "version": "1.0.0",
+  "description": "It is a dairy app that stores stories locally",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farooq",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
