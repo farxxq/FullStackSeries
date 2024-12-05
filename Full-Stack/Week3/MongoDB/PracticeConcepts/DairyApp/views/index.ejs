@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Assalamwalaikum</h1>
+    <h1 class="m-5 text-3xl font-semibold font-sans flex justify-center">Assalamwalaikum, Welcome Akhi/ukthi to the Daily Dairy app</h1>
     <div class="container">
-      <form action="/create" method="post" class="mt-5 px-3 flex flex-col">
+      <form action="/create" method="post" class="mt-5 px-3 flex justify-center flex-col">
         <input
           class="px-4 py-1 text-2xl w-3/12 rounded-md border-2 border-zinc-500 bg-zinc-800"
           name = "fileName"
@@ -33,9 +33,9 @@
       <div class="files flex flex-wrap gap-3 p-10">
         <% if (files.length > 0) { %>
             <% files.forEach( val => { %>
-                <div class="task min-w-72 px-3 py-4 rounded-md bg-zinc-800">
-                    <h1 class="text-white text-3xl tracking-tighter"><%= val %></h1>
-                    <div class="flex w-full justify-between mt-3">
+                <div class="task min-w-72 px-3 py-7 rounded-md bg-zinc-800">
+                    <h1 class="text-white text-3xl px-5 tracking-tighter"><%= val %></h1>
+                    <div class="flex w-full justify-between px-5 mt-7">
                         <a class="text-blue-500 inline-block" href="/files/<%= val %>">Read More.</a>                       
                     </div>
                 </div>

@@ -15,12 +15,26 @@ app.get("/", (req, res) => {
 });
 
 app.get("/files/:file", (req, res) => {
-  fs.readFile(`./file/${req.params.file}`, 
+  fs.readFile(`./files/${req.params.file}`, 
     "utf-8", 
     (err, content) => {
     res.render("read", { file: req.params.file, data: content });
   });
+  console.log(req.params.file)
 });
+
+app.get('/delete', (req,res)=>{
+  const fileName = req.query.file;
+  res.render("delete", {file : fileName})
+  console.log("delete ejs file active")
+})
+
+app.post('/delete/:file', (req,res)=>{
+  fs.rm(`./files/${req.params.file}`,(err)=>{
+    res.redirect('/')
+    console.log("File deleted:",req.params.file)
+  })
+})
 
 
 app.post("/create", (req, res) => {

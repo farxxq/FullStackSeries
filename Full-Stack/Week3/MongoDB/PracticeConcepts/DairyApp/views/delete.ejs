@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dairy App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="m-5 text-3xl font-semibold font-sans flex justify-center">
+      You surely want to delete this file: <%= file %>
+    </h1>
+    <a class="text-blue-600 text-sm px-5 py-5 border-red-500" href="/"
+      >Fall Back to the Home</a
+    >
+    <form action="/delete/<%= file %>" method="post">
+        <input
+          class="p-2 text-xl w-32 rounded-xl bg-red-600 flex justify-center"
+          type="submit"
+          value="Yes"
+        />
+      </form>
+      <form action="/" method="get">
+        <input
+          class="p-2 text-xl w-32 rounded-xl bg-blue-600 flex justify-center"
+          type="submit"
+          value="No"
+        />
+      </form>
+  </body>
+</html>
