@@ -70,10 +70,9 @@ app.post("/delete", function (req, res) {
     console.log(req.body.filename)
   });
 
-app.get("/sahu", function (req, res) {
-  // res.send("Meri jaan");
-  res.send(`Welcome, Sahu meri noor`);
-  console.log("the route sahu is working");
+app.get("/light", function (req, res) {
+  res.send(`Welcome, light`);
+  console.log("the route light is working");
 });
 
 app.listen(3000, function () {

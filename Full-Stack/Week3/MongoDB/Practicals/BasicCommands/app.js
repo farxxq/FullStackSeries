@@ -4,7 +4,7 @@ const app = express();
 const userModel = require('./usermodel')
 
 app.get('/', (req,res)=>{
-    res.send("hey")
+    res.send("Assalamwalaikum,Change the url to see the working of the commands")
 })
 
 // Create a user
