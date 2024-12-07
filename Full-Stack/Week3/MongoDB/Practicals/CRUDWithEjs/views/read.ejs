@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDWithEjs</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1>Assalamwalaikum</h1>
+    <div class="w-full h-full bg-black p-10 text-white">
+      <a class="text-blue-500" href="/">Back to home</a>
+      <h1 class="text-3xl tracking-tighter mt-10 mb-3">All Users</h1>
+      <div class="users flex gap-3 flex-wrap">
+        <% user.forEach( elem => { %>
+        <div class="user w-72 p-4 bg-zinc-800 rounded-md">
+          <div class="w-full h-52 rounded-md bg-blue-500 overflow-hidden">
+            <img src="<%= elem.image  %>" alt="<%= elem.name %>" />
+          </div>
+          <h3 class="text-xl mt-3 tracking-tighter"><%= elem.name %></h3>
+          <h4 class="text-zinc-500"><%= elem.email %></h4>
+          <div class="flex gap-3">
+            <a class="text-zinc-400" href="">Edit User</a>
+            <a class="text-red-500" href="">Delete User</a>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>
