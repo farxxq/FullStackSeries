@@ -13,7 +13,7 @@
       <a class="text-blue-500" href="/">Back to home</a>
       <h1 class="text-3xl tracking-tighter mt-10 mb-3">All Users</h1>
       <div class="users flex gap-3 flex-wrap">
-        <% user.forEach( elem => { %>
+        <% if (user.length > 0) { %> <% user.forEach( elem => { %>
         <div class="user w-72 p-4 bg-zinc-800 rounded-md">
           <div class="w-full h-52 rounded-md bg-blue-500 overflow-hidden">
             <img src="<%= elem.image  %>" alt="<%= elem.name %>" />
@@ -21,11 +21,13 @@
           <h3 class="text-xl mt-3 tracking-tighter"><%= elem.name %></h3>
           <h4 class="text-zinc-500"><%= elem.email %></h4>
           <div class="flex gap-3">
-            <a class="text-zinc-400" href="">Edit User</a>
-            <a class="text-red-500" href="">Delete User</a>
+            <a class="text-zinc-400" href="/edit/<%= elem._id %>">Edit User</a>
+            <a class="text-red-500" href="/delete/<%= elem._id  %>">Delete User</a>
           </div>
         </div>
-        <% }); %>
+        <% }); %> <% } else{ %>
+        <h3 class="text-zinc-500 text-2xl">No users yet</h3>
+        <% } %>
       </div>
     </div>
   </body>
