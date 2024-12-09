@@ -20,5 +20,17 @@ CREATE code         ->  Document
 ORM - Object Relation Mapping
 ODM - Object Document Mapping 
 
-Schema 
-the identies that all of them have
+Schema -
+the identies that all of them have the same user form of data's
+
+Authentication - 
+Validating the user before performing any tasks
+
+Authorization - 
+The roles that are assigned to specific users and accordingly they can perform the tasks
+
+Server requests for the Authentication everytime we request for some task completion. 
+Even if we have been authenticated before.
+
+To overcome this problem we have a unique string created by the backend that is attached to the frontend after accepting the request and sending a response.
+That string is used everytime (request attached with the unique string) the frontend tries to interact with the backend and remembers the Authentication of the user.
