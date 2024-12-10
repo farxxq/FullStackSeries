@@ -41,9 +41,9 @@ Used for the encrypt and decrypt
 for eg:
 password => iaeejfoajfoeia (hashed value using the bcrypt)
 
-jwt - 
+jwt (json web tokens) - 
 1. data of the algo
-2. data
+2. actual data that is hashed
 3. signature related data
 
 has the above mentioned in their data that is used to validate or authenticate the user and accept a request and provide the response for a task
