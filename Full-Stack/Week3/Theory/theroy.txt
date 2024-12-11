@@ -38,6 +38,13 @@ That string is used everytime (request attached with the unique string) the fron
 bcrypt - 
 Used for the encrypt and decrypt
 
+syntax for it -
+    bcrypt.genSalt(10, (err,salt)=>{
+        bcrypt.hash('Safar', salt, (err, hash)=>{
+            console.log("hash:",hash)
+        });
+    });
+
 for eg:
 password => iaeejfoajfoeia (hashed value using the bcrypt)
 
