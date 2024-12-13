@@ -4,6 +4,8 @@ const http = require("http");
 // Importing the eventEmitter from the node modules
 const EventEmitter = require("events");
 const myEmitter = new EventEmitter();
+// url module
+const url = require('url');
 
 // // To create a http server using the node:
 // const server = http.createServer((req,res)=>{
@@ -49,14 +51,17 @@ const myEmitter = new EventEmitter();
 // // Lists the events
 // console.log("This is the list of events active:",myEmitter.listeners("event"))
 
-const fs = require('fs')
+// ----File system----
+// const fs = require('fs')
 
-fs.writeFile('Temp.txt', "This is the temp file made for studying",()=>{
-    console.log("Created a file")
-})
+// fs.writeFile('Temp.txt', "This is the temp file made for studying",()=>{
+//     console.log("Created a file")
+// })
 
-fs.readFile("Temp.txt", "utf-8" ,(err,data)=>{
-    if(err) throw err;
-    console.log("The file is read and the info is:", data);
-})
+// fs.readFile("Temp.txt", "utf-8" ,(err,data)=>{
+//     if(err) throw err;
+//     console.log("The file is read and the info is:", data);
+// })
+
+
 
