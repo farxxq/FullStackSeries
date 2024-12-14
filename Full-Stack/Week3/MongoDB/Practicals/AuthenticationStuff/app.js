@@ -2,15 +2,15 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt'); // It is used to encrypt and decrypt
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
 
 // To read the cookies
-app.use(cookieParser())
+app.use(cookieParser());
 
 //cookies being set
 app.get('/', (req,res)=>{
-    res.cookie("name", "Sahu");
-    res.send("done")
+    res.cookie("name", "Sa");
+    res.send("Cookie added");
 })
 
 //cookies being read
