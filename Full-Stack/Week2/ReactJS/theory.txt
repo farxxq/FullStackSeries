@@ -1,0 +1,26 @@
+ReactJS:
+-> React ek JavaScript library hai jo reusable components ke zariye dynamic web apps banane ke liye use hoti hai. Yeh Facebook ne banayi hai, aur iska focus "fast rendering" aur "component-based architecture" par hota hai.
+
+-> We use the `{ }` to set the new value or update anything ..... this is a special jsx bracket used in react
+
+Fragments : empty brackets (<> ... </>) used in the return statement of a function
+
+Boiler Plate:
+import './App.css'
+import React from 'react'
+
+function App() {
+
+  return (
+    <div></div>
+  )
+ 
+}
+
+export default App
+
+State: 
+  React mein "state" wo data hota hai jo component ke andar store hota hai aur dynamically change ho sakta hai.
+
+useState Hook: 
+  Yeh ek React hook hai jo functional components mein state add karne ke liye use hota hai.
