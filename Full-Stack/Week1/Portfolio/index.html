@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
+</head>
+<body class="relative">
+    <!-- Nav -->
+    <nav class="absolute top-5 left-1/2 transform -translate-x-1/2 flex gap-10 px-6 py-2 border-2 border-cyan-400 rounded-full text-lg shadow-md z-20">
+        <a href="#" class="hover:text-cyan-500">About</a>
+        <a href="#" class="hover:text-cyan-500">Services</a>
+        <a href="#" class="hover:text-cyan-500">Contact</a>
+    </nav>
+
+    <!-- Developer Div -->
+    <div class="developer absolute top-0 left-0 w-screen h-screen bg-gradient-to-r from-black to-blue-900 flex items-center px-10">
+        <div class="flex flex-col justify-center place-content-around h-full ml-64">
+            <h1 class="text-4xl font-bold mb-7 italic">Hi there,</h1>
+            <h5 class="text-2xl mb-10">Developer, Editor?, Learner</h5>
+            <button class="px-4 py-2 inline-block bg-white text-xl text-blue-900 font-bold rounded-md w-fit">Download Resume</button>
+        </div>
+    </div>
+
+    <!-- Projects -->
+     <div class="absolute top-0 left-0 w-screen h-screen bg-gradient-to-r from-blue-900 to-black flex items-center px-28" id="about">
+        <div class="cards flex gap-10 px-10 overflow-none">
+            <div class="card1 flex justify-center items-end bg-[url('farooq1.jpg')] bg-cover overflow-none w-72 h-80 shadow-xl rounded-xl bg-gray-800">
+                <a href="" class="relative text-xl text-white font-bold tracking-wider z-30 hover:text-green-300 ease-in duration-200 py-3">
+                    Project placeholder
+                </a>
+            </div>
+            <div class="relative card1 flex justify-center items-end bg-[url('farooq1.jpg')] bg-cover overflow-none w-72 h-80 shadow-xl rounded-xl bg-gray-800">
+                <a href="" class="text-xl text-white font-bold tracking-wider z-30 hover:text-green-300 ease-in duration-200 py-3">
+                    Project placeholder
+                </a>
+            </div>
+            <div class="relative card1 flex justify-center items-end bg-[url('farooq1.jpg')] bg-cover overflow-none w-72 h-80 shadow-xl rounded-xl bg-gray-800">
+                <a href="" class="text-xl text-white font-bold tracking-wider z-30 hover:text-green-300 ease-in duration-200 py-3">
+                    Project placeholder
+                </a>
+            </div>
+            <div class="relative card1 flex justify-center items-end bg-[url('farooq1.jpg')] bg-cover overflow-none w-72 h-80 shadow-xl rounded-xl bg-gray-800">
+                <a href="" class="text-xl text-white font-bold tracking-wider z-30 hover:text-green-300 ease-in duration-200 py-3">
+                    Project placeholder
+                </a>
+            </div>
+            <div class="relative card1 flex justify-center items-end bg-[url('farooq1.jpg')] bg-cover overflow-none w-72 h-80 shadow-xl rounded-xl bg-gray-800">
+                <a href="" class="text-xl text-white font-bold tracking-wider z-30 hover:text-green-300 ease-in duration-200 py-3">
+                    Project placeholder
+                </a>
+            </div>
+            <div class="relative card1 flex justify-center items-end bg-[url('farooq1.jpg')] bg-cover overflow-none w-72 h-80 shadow-xl rounded-xl bg-gray-800">
+                <a href="" class="text-xl text-white font-bold tracking-wider z-30 hover:text-green-300 ease-in duration-200 py-3">
+                    Project placeholder
+                </a>
+            </div>
+
+
+        </div>
+     </div>
+
+     <!-- Contact -->
+      <div class="absolute hidden top-0 left-0 w-screen h-screen bg-red-900 flex items-center px-32 z-10" id="contact">
+        <div class="container">
+            <h1 class="text-2xl font-bold">Contact us</h1>
+        </div>
+      </div>
+</body>
+</html>

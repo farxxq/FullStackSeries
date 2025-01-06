@@ -7,7 +7,7 @@
 body {
     background-color: black;
     color: lavenderblush;
-    margin: 0;
+    padding: 0;
     font-family: cursive, sans-serif;
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
 /* Container */
 .container{
     margin: 20px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     background-color: #003;
 }
@@ -46,28 +46,119 @@ nav a{
 /* Hero container */
 .heroContainer{
     width: 100%;
-    height: 70%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #005;
+}
+
+/* DevImage */
+.heroImage{
+    max-width: 50%;
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.heroImage .developerImage{
+    display: flex;
+    justify-content: center;
+}
+
+.developerImage img{
+    max-width: 70%;
+    object-fit: fill;
+    border-radius: 50%;
 }
 
 /* Header */
 .header{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    border: 1px solid red;
 }
 
-.heroImage{
-    padding: 20px;
-    width: 50%;
-    min-height: 40%;
-    display: contents;
+.header h1,h3{
+    margin: 4px;
+}
+
+.header .headerHighlight{
+    color: #7CF5FF;
+}
+
+/* About */
+
+.about{
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border: 1px solid red;
 }
 
-.heroImage img{
-    /* height: 5rem; */
-    size: 10px;
+.aboutBox{
+    margin: 3px;
+    min-width: 20%;
+    max-width: 60%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lightseagreen;
+}
+
+/* ṭechStack */
+
+.techStack{
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.techContainer{
+    min-width: 20%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 3px;
+    background-color: gray;
+}
+
+/* Projects */
+
+.projects{
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.projectBox{
+    min-width: 20%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 3px;
+    background-color: gray;
+}
+
+/* Contact placeholder */
+
+.contact{
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid red;
 }
